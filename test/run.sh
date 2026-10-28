@@ -39,8 +39,11 @@ for case_dir in "$ROOT"/test/cases/*/; do
 
   (cd "$dir" && vale sync >/dev/null)
   # Vale exits 1 when it reports an error-level alert; only a higher code is a failure here.
+  # Vale runs directly, not through xargs: GNU xargs turns a child's exit 1 into 123.
   rc=0
-  (cd "$dir" && find . -type f ! -path './.vale/*' ! -name .vale.ini | sed 's#^\./##' | LC_ALL=C sort | xargs vale --output=JSON) > "$WORK/$name.out.json" || rc=$?
+  files=$(cd "$dir" && find . -type f ! -path './.vale/*' ! -name .vale.ini | sed 's#^\./##' | LC_ALL=C sort)
+  # shellcheck disable=SC2086 # fixture paths have no spaces; word splitting is the point
+  (cd "$dir" && vale --output=JSON $files) > "$WORK/$name.out.json" || rc=$?
   if [ "$rc" -gt 1 ]; then
     echo "FAIL $name: vale exited $rc" >&2
     cat "$WORK/$name.out.json" >&2
