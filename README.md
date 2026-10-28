@@ -8,7 +8,7 @@ Put this in the repo's `.vale.ini`, then run `vale sync`:
 
 ```ini
 StylesPath = .vale/styles
-Packages = https://github.com/firstdollar/fd-vale/releases/download/v1.0.0/fd-vale.zip
+Packages = https://github.com/firstdollar/fd-vale/releases/download/v0.1.0/fd-vale.zip
 ```
 
 Add `.vale/styles/` to `.gitignore`. Vale 3.25.1 or later is required. Older versions read comments in `.mjs`, `.cjs`, `.mts` and `.cts` files as plain text, and lint code examples inside JavaScript and TypeScript comments as prose. fd-vale's CI pins 3.25.1.
@@ -111,7 +111,7 @@ The script lints the repo's tracked Markdown with its current config and with th
 Merge to `main`, then push a tag:
 
 ```sh
-git tag v1.1.0 && git push origin v1.1.0
+git tag v0.2.0 && git push origin v0.2.0
 ```
 
 The release workflow refuses a tag whose commit is not on `main`. It runs the tests, builds the zip, and publishes the release with the zip's SHA-256 in the notes.
@@ -121,6 +121,8 @@ Versions follow SemVer, measured by what a repo's CI sees:
 - **Major:** a new error-level alert. This covers a new rule at error, a raised level, or a removed exemption.
 - **Minor:** new warnings or suggestions only.
 - **Patch:** changes that only remove alerts or change messages.
+
+Until v1.0.0, each release is a GitHub pre-release, and each number moves down one place. A new error-level alert raises the minor version (0.1.0 to 0.2.0). Every other change raises the patch version. A tag with a pre-release suffix, such as `v1.0.0-rc.1`, is also published as a pre-release.
 
 ## Tests
 

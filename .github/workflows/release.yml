@@ -82,8 +82,12 @@ jobs:
           echo "${sum}  fd-vale.zip" | sha256sum -c -
           \`\`\`
           EOF
-          gh release create "$TAG" --draft --verify-tag --title "$TAG" --notes-file notes.md \
-            dist/fd-vale.zip dist/fd-vale.zip.sha256
+          # A 0.x tag, or a tag with a SemVer pre-release suffix such as v1.0.0-rc.1, is
+          # published as a GitHub pre-release.
+          prerelease=()
+          case "$TAG" in v0.*|*-*) prerelease=(--prerelease) ;; esac
+          gh release create "$TAG" --draft "${prerelease[@]}" --verify-tag --title "$TAG" \
+            --notes-file notes.md dist/fd-vale.zip dist/fd-vale.zip.sha256
 
       - name: Publish release
         env:
