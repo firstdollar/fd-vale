@@ -1,0 +1,23 @@
+# Copied from docker/docs-toolkit (Docker style), tag v0.1.0, commit e2f2b5d7417a,
+# Apache-2.0; see LICENSE.Apache-2.0 in this directory. Kept when the rest of the Docker
+# style was dropped: this rule and We produced 241 of its 269 hits in the larger internal
+# repository.
+# Changed from Docker's list: words ai-tells already flags as single tokens
+# (OverusedVocabulary, AICompoundPhrases) are removed so one word does not fire twice.
+# very and truly were added once, then removed again in fd-vale because
+# JustSaySo.Intensifiers flags them. The just token skips every hyphenated compound
+# (just-in-time, just-say-so): Vale treats a hyphen as a word boundary, so a vocabulary
+# entry for the compound cannot exempt the bare word inside it.
+extends: existence
+message: "Consider removing '%s'."
+ignorecase: true
+level: warning
+tokens:
+  - amazing
+  - easily
+  - 'just(?!-)'
+  - please
+  - powerful
+  - really
+  - revolutionary
+  - simply

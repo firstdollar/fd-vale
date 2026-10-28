@@ -1,0 +1,16 @@
+# Terms Vale must accept as written. Entries are case-sensitive regular
+# expressions, one per line. Vale adds each one to the exception list of every
+# rule in the active styles, so product names never trip a rule.
+# See https://docs.vale.sh/keys/vocabularies
+First Dollar
+FD Admin
+FD Coin
+HSA
+FSA
+HRA
+# Not names. These silence ai-tells.FormalRegister, which reads implement as formal
+# register; here it is the precise engineering term (263 of the rule's 284 hits in
+# an internal repository). The fd-vale base turns FormalRegister off, so these entries matter only
+# in a repo that turns it back on.
+(?i)implementation
+(?i)implement(s|ed|ing)?

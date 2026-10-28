@@ -1,0 +1,57 @@
+# Runs the snapshot tests and checks the committed third-party styles against upstream.json.
+# SHA-pinned actions, Vale pinned by SHA-256, contents: read.
+
+name: Test
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: test-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  VALE_VERSION: 3.25.1
+  # From vale_3.25.1_checksums.txt on the GitHub release (an immutable release).
+  VALE_SHA256: 4bf5c5176b682b1da0830f471584d3494f1c2e27ee3029e1ad6f6661d4962182
+
+jobs:
+  snapshots:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Install Vale
+        run: |
+          curl -sSfL -o vale.tar.gz \
+            "https://github.com/vale-cli/vale/releases/download/v${VALE_VERSION}/vale_${VALE_VERSION}_Linux_64-bit.tar.gz"
+          echo "${VALE_SHA256}  vale.tar.gz" | sha256sum -c -
+          mkdir -p "$HOME/.local/bin"
+          tar -xzf vale.tar.gz -C "$HOME/.local/bin" vale
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+
+      # Builds dist/fd-vale.zip, serves it on localhost, and runs `vale sync` against it.
+      - name: Snapshot tests
+        run: test/run.sh
+
+      # The release job builds on this runner image too. Printing the hash here lets a
+      # reviewer compare it with a local build of the same commit.
+      - name: Build hash
+        run: cat dist/fd-vale.zip.sha256 >> "$GITHUB_STEP_SUMMARY"
+
+  upstream:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      # Fails if a committed third-party file differs from what upstream.json pins, so an
+      # edit to vendored rules can only arrive through a manifest change.
+      - name: Committed styles match upstream.json
+        run: scripts/fetch-upstream.sh --check

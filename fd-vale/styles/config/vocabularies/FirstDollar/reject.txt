@@ -1,0 +1,2 @@
+# Terms Vale must flag wherever they appear (Vale.Avoid). Empty on purpose: banned
+# words live as rules in the FirstDollar style so they carry a level and a message.

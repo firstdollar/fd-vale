@@ -1,0 +1,3 @@
+Added caching layer
+
+Refs PROJ-123: this commit leverages a robust cache to improve performance.

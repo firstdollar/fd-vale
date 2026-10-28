@@ -1,0 +1,3 @@
+# Silent: YAML is not a prose type. Without the allow-list Vale lints every line.
+name: The cache is warm — we simply ship it
+on: push

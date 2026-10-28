@@ -1,0 +1,13 @@
+# First Dollar's hard cap on sentence length. STE.SentenceLength warns past 25 words;
+# this blocks past 35, where a sentence reliably holds more than one idea.
+#
+# Measured 12 Oct 2026 on 29 Markdown files in an internal repository: 694 sentences
+# exceed 25 words, 191 exceed 35, 87 exceed 40. The gate lints added lines
+# only, so an existing long sentence blocks a commit only when its line changes.
+# Tokens match STE.SentenceLength's, so the two rules count the same words.
+extends: occurrence
+message: "Sentence is %d words. Split it: the First Dollar cap is 35."
+level: error
+scope: sentence
+max: 35
+token: '[\w''’-]+'

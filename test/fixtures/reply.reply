@@ -1,0 +1,29 @@
+<!-- At error: EmDashUsage is one of the nine rules [*.reply] keeps at error. -->
+
+The fix lands in the next release — it is small.
+
+<!-- At warning: `ai-tells = warning` and `JustSaySo = warning` lower FigurativeLands above and the buzzword here. -->
+
+Teams leverage the cache.
+
+<!-- At error: CataphoricForecasting. -->
+
+Two things to check: the cache and the queue.
+
+<!-- At error: FirstDollar.SentenceCap, a sentence over 35 words. -->
+
+The release job on the Linux runner builds the zip from the tagged commit and uploads that zip and its checksum file to a draft release that a maintainer can delete by hand when a later step in the same job fails.
+
+<!-- At warning: the rest of FirstDollar runs on replies at warning. -->
+
+Nobody has reported the bug.
+
+<!-- Silent: FirstDollar.We is off in replies, and ColonUsage stays off after the style-wide level. -->
+
+We merged it.
+
+**Status**: merged.
+
+<!-- At warning: STE runs on every target through [*]. -->
+
+The file was deleted by the cleanup job.

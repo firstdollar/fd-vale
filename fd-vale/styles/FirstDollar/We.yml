@@ -1,0 +1,15 @@
+# Copied from docker/docs-toolkit (Docker style), tag v0.1.0, commit e2f2b5d7417a,
+# Apache-2.0; see LICENSE.Apache-2.0 in this directory. Kept when the rest of the Docker
+# style was dropped: this rule and Avoid produced 241 of its 269 hits in the larger
+# internal repository.
+extends: existence
+message: "Avoid using first-person plural like '%s'."
+level: warning
+ignorecase: false
+tokens:
+  - '[Ww]e'
+  - "[Ww]e'(?:ve|re)"
+  - '[Oo]urs?'
+  - us
+  - Us
+  - "[Ll]et's"

@@ -1,0 +1,11 @@
+The fix lands in the next release.
+
+The test holds the line on the regression.
+
+Nobody has reported the bug.
+
+The cache is warm — the build is fast.
+
+<!-- Fires at warning: STE runs on every target through [*]. -->
+
+The file was deleted by the cleanup job.

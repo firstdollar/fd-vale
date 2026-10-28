@@ -1,0 +1,585 @@
+[
+  {
+    "check": "Prompts.Imperative",
+    "line": 5,
+    "match": "You SHOULD",
+    "path": "AGENTS.md",
+    "severity": "warning",
+    "span": [
+      1,
+      10
+    ]
+  },
+  {
+    "check": "ai-tells.EmDashUsage",
+    "line": 7,
+    "match": "—",
+    "path": "AGENTS.md",
+    "severity": "error",
+    "span": [
+      16,
+      16
+    ]
+  },
+  {
+    "check": "Prompts.Paths",
+    "line": 9,
+    "match": "C:\\repo\\scripts\\build.sh",
+    "path": "AGENTS.md",
+    "severity": "error",
+    "span": [
+      6,
+      29
+    ]
+  },
+  {
+    "check": "ai-tells-commits.CommitPastTense",
+    "line": 1,
+    "match": "Added",
+    "path": "COMMIT_EDITMSG",
+    "severity": "error",
+    "span": [
+      1,
+      5
+    ]
+  },
+  {
+    "check": "ai-tells.OverusedVocabularyVerbs",
+    "line": 3,
+    "match": "leverages",
+    "path": "COMMIT_EDITMSG",
+    "severity": "error",
+    "span": [
+      28,
+      36
+    ]
+  },
+  {
+    "check": "ai-tells.OverusedVocabulary",
+    "line": 3,
+    "match": "robust",
+    "path": "COMMIT_EDITMSG",
+    "severity": "error",
+    "span": [
+      40,
+      45
+    ]
+  },
+  {
+    "check": "ai-tells.EmDashUsage",
+    "line": 3,
+    "match": "—",
+    "path": "archive/old.md",
+    "severity": "error",
+    "span": [
+      19,
+      19
+    ]
+  },
+  {
+    "check": "ai-tells.EmDashUsage",
+    "line": 7,
+    "match": "—",
+    "path": "artifact.page.html",
+    "severity": "error",
+    "span": [
+      22,
+      22
+    ]
+  },
+  {
+    "check": "FirstDollar.We",
+    "line": 8,
+    "match": "We",
+    "path": "artifact.page.html",
+    "severity": "warning",
+    "span": [
+      4,
+      5
+    ]
+  },
+  {
+    "check": "FirstDollar.Avoid",
+    "line": 8,
+    "match": "simply",
+    "path": "artifact.page.html",
+    "severity": "warning",
+    "span": [
+      7,
+      12
+    ]
+  },
+  {
+    "check": "ai-tells.ShipOveruse",
+    "line": 8,
+    "match": "ship",
+    "path": "artifact.page.html",
+    "severity": "warning",
+    "span": [
+      14,
+      17
+    ]
+  },
+  {
+    "check": "ai-tells.EmDashUsage",
+    "line": 5,
+    "match": "—",
+    "path": "doc.md",
+    "severity": "error",
+    "span": [
+      19,
+      19
+    ]
+  },
+  {
+    "check": "FirstDollar.We",
+    "line": 7,
+    "match": "We",
+    "path": "doc.md",
+    "severity": "warning",
+    "span": [
+      1,
+      2
+    ]
+  },
+  {
+    "check": "FirstDollar.Avoid",
+    "line": 7,
+    "match": "simply",
+    "path": "doc.md",
+    "severity": "warning",
+    "span": [
+      9,
+      14
+    ]
+  },
+  {
+    "check": "ai-tells.ShipOveruse",
+    "line": 7,
+    "match": "ship",
+    "path": "doc.md",
+    "severity": "warning",
+    "span": [
+      16,
+      19
+    ]
+  },
+  {
+    "check": "JustSaySo.Intensifiers",
+    "line": 9,
+    "match": "very",
+    "path": "doc.md",
+    "severity": "suggestion",
+    "span": [
+      11,
+      14
+    ]
+  },
+  {
+    "check": "JustSaySo.Leverage",
+    "line": 11,
+    "match": "leverage",
+    "path": "doc.md",
+    "severity": "error",
+    "span": [
+      7,
+      14
+    ]
+  },
+  {
+    "check": "ai-tells.OverusedVocabularyVerbs",
+    "line": 11,
+    "match": "leverage",
+    "path": "doc.md",
+    "severity": "error",
+    "span": [
+      7,
+      14
+    ]
+  },
+  {
+    "check": "JustSaySo.NegativeParallelism",
+    "line": 13,
+    "match": "It's not a cache, it's",
+    "path": "doc.md",
+    "severity": "error",
+    "span": [
+      1,
+      22
+    ]
+  },
+  {
+    "check": "FirstDollar.SentenceCap",
+    "line": 15,
+    "match": "The",
+    "path": "doc.md",
+    "severity": "error",
+    "span": [
+      1,
+      3
+    ]
+  },
+  {
+    "check": "STE.SentenceLength",
+    "line": 15,
+    "match": "The",
+    "path": "doc.md",
+    "severity": "warning",
+    "span": [
+      1,
+      3
+    ]
+  },
+  {
+    "check": "ai-tells.VerbTricolon",
+    "line": 15,
+    "match": "reads every pending job from the queue, checks each one against the current schema version, rewrites the payload when the version is older",
+    "path": "doc.md",
+    "severity": "warning",
+    "span": [
+      12,
+      149
+    ]
+  },
+  {
+    "check": "FirstDollar.NobodySubject",
+    "line": 17,
+    "match": "Nobody",
+    "path": "doc.md",
+    "severity": "warning",
+    "span": [
+      1,
+      6
+    ]
+  },
+  {
+    "check": "ai-tells.MortalityMetaphors",
+    "line": 19,
+    "match": "The cache survives",
+    "path": "doc.md",
+    "severity": "warning",
+    "span": [
+      1,
+      18
+    ]
+  },
+  {
+    "check": "STE.NounClusters",
+    "line": 23,
+    "match": "implementation stores First Dollar",
+    "path": "doc.md",
+    "severity": "suggestion",
+    "span": [
+      5,
+      38
+    ]
+  },
+  {
+    "check": "STE.NounClusters",
+    "line": 23,
+    "match": "stores First Dollar account",
+    "path": "doc.md",
+    "severity": "suggestion",
+    "span": [
+      20,
+      46
+    ]
+  },
+  {
+    "check": "STE.NounClusters",
+    "line": 23,
+    "match": "First Dollar account data",
+    "path": "doc.md",
+    "severity": "suggestion",
+    "span": [
+      27,
+      51
+    ]
+  },
+  {
+    "check": "STE.PassiveVoice",
+    "line": 29,
+    "match": "was deleted",
+    "path": "doc.md",
+    "severity": "warning",
+    "span": [
+      10,
+      20
+    ]
+  },
+  {
+    "check": "ai-tells.FigurativeLands",
+    "line": 1,
+    "match": "fix lands in",
+    "path": "gh.pr.body.publish",
+    "severity": "error",
+    "span": [
+      5,
+      16
+    ]
+  },
+  {
+    "check": "ai-tells.FigurativeHolds",
+    "line": 3,
+    "match": "holds the line",
+    "path": "gh.pr.body.publish",
+    "severity": "error",
+    "span": [
+      10,
+      23
+    ]
+  },
+  {
+    "check": "FirstDollar.NobodySubject",
+    "line": 5,
+    "match": "Nobody",
+    "path": "gh.pr.body.publish",
+    "severity": "error",
+    "span": [
+      1,
+      6
+    ]
+  },
+  {
+    "check": "ai-tells.EmDashUsage",
+    "line": 7,
+    "match": "—",
+    "path": "gh.pr.body.publish",
+    "severity": "error",
+    "span": [
+      19,
+      19
+    ]
+  },
+  {
+    "check": "STE.PassiveVoice",
+    "line": 11,
+    "match": "was deleted",
+    "path": "gh.pr.body.publish",
+    "severity": "warning",
+    "span": [
+      10,
+      20
+    ]
+  },
+  {
+    "check": "ai-tells.EmDashUsage",
+    "line": 3,
+    "match": "—",
+    "path": "notes.mdx",
+    "severity": "error",
+    "span": [
+      19,
+      19
+    ]
+  },
+  {
+    "check": "ai-tells.FigurativeLands",
+    "line": 3,
+    "match": "fix lands in",
+    "path": "reply.reply",
+    "severity": "warning",
+    "span": [
+      5,
+      16
+    ]
+  },
+  {
+    "check": "ai-tells.EmDashUsage",
+    "line": 3,
+    "match": "—",
+    "path": "reply.reply",
+    "severity": "error",
+    "span": [
+      35,
+      35
+    ]
+  },
+  {
+    "check": "JustSaySo.Leverage",
+    "line": 7,
+    "match": "leverage",
+    "path": "reply.reply",
+    "severity": "warning",
+    "span": [
+      7,
+      14
+    ]
+  },
+  {
+    "check": "ai-tells.OverusedVocabularyVerbs",
+    "line": 7,
+    "match": "leverage",
+    "path": "reply.reply",
+    "severity": "warning",
+    "span": [
+      7,
+      14
+    ]
+  },
+  {
+    "check": "ai-tells.CataphoricForecasting",
+    "line": 11,
+    "match": "Two things to check:",
+    "path": "reply.reply",
+    "severity": "error",
+    "span": [
+      1,
+      20
+    ]
+  },
+  {
+    "check": "FirstDollar.SentenceCap",
+    "line": 15,
+    "match": "The",
+    "path": "reply.reply",
+    "severity": "error",
+    "span": [
+      1,
+      3
+    ]
+  },
+  {
+    "check": "STE.SentenceLength",
+    "line": 15,
+    "match": "The",
+    "path": "reply.reply",
+    "severity": "warning",
+    "span": [
+      1,
+      3
+    ]
+  },
+  {
+    "check": "FirstDollar.NobodySubject",
+    "line": 19,
+    "match": "Nobody",
+    "path": "reply.reply",
+    "severity": "warning",
+    "span": [
+      1,
+      6
+    ]
+  },
+  {
+    "check": "STE.PassiveVoice",
+    "line": 29,
+    "match": "was deleted",
+    "path": "reply.reply",
+    "severity": "warning",
+    "span": [
+      10,
+      20
+    ]
+  },
+  {
+    "check": "ai-tells.EmDashUsage",
+    "line": 1,
+    "match": "—",
+    "path": "src/cache.ts",
+    "severity": "error",
+    "span": [
+      65,
+      65
+    ]
+  },
+  {
+    "check": "FirstDollar.Avoid",
+    "line": 1,
+    "match": "simply",
+    "path": "src/cache.ts",
+    "severity": "warning",
+    "span": [
+      70,
+      75
+    ]
+  },
+  {
+    "check": "ai-tells.ShipOveruse",
+    "line": 1,
+    "match": "ships",
+    "path": "src/cache.ts",
+    "severity": "warning",
+    "span": [
+      77,
+      81
+    ]
+  },
+  {
+    "check": "ai-tells.EmDashUsage",
+    "line": 2,
+    "match": "—",
+    "path": "src/cache.ts",
+    "severity": "error",
+    "span": [
+      46,
+      46
+    ]
+  },
+  {
+    "check": "JustSaySo.Leverage",
+    "line": 2,
+    "match": "leverage",
+    "path": "src/cache.ts",
+    "severity": "error",
+    "span": [
+      51,
+      58
+    ]
+  },
+  {
+    "check": "ai-tells.OverusedVocabularyVerbs",
+    "line": 2,
+    "match": "leverage",
+    "path": "src/cache.ts",
+    "severity": "error",
+    "span": [
+      51,
+      58
+    ]
+  },
+  {
+    "check": "ai-tells.SemicolonUsage",
+    "line": 3,
+    "match": "; the queue waits.",
+    "path": "src/cache.ts",
+    "severity": "error",
+    "span": [
+      57,
+      74
+    ]
+  },
+  {
+    "check": "ai-tells.EmDashUsage",
+    "line": 2,
+    "match": "—",
+    "path": "src/tool.mjs",
+    "severity": "error",
+    "span": [
+      22,
+      22
+    ]
+  },
+  {
+    "check": "FirstDollar.Avoid",
+    "line": 2,
+    "match": "simply",
+    "path": "src/tool.mjs",
+    "severity": "warning",
+    "span": [
+      27,
+      32
+    ]
+  },
+  {
+    "check": "ai-tells.ShipOveruse",
+    "line": 2,
+    "match": "ships",
+    "path": "src/tool.mjs",
+    "severity": "warning",
+    "span": [
+      34,
+      38
+    ]
+  }
+]

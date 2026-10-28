@@ -1,0 +1,23 @@
+# "Nobody" as the subject of a claim about what didn't happen. The narrow form of a negated
+# subject that ai-tells.NegatedSubject leaves out: its token list has no "Nobody", and its
+# lookahead drops "no one" on purpose.
+#
+# NARROW BY POSITION. The capital "Nobody" opens a sentence ("Nobody has been blocked by this"),
+# and "but nobody" or "and nobody" opens a clause ("but nobody marked the entry fixed"). A
+# relative clause stays out ("a role nobody declared," "a topic nobody subscribes to"), because
+# there "nobody" is exact and a rewrite reads worse.
+#
+# Measured 14 Oct 2026 on an internal repository's prose (93,482 words). The broad pattern, "nobody" or
+# "no one" before any verb, matched 29 times, and about 1 in 4 of the first 14 was a real problem.
+# This form matches 10 times, and about 6 of those read better rewritten.
+#
+# A warning in Markdown. The [*.publish] section raises it to error for published text.
+extends: existence
+message: "Negated subject: '%s'. Name who did what, or say what the thing does."
+level: warning
+nonword: true
+# The possessive ("nobody's is replaced," meaning no stack's golden) and the condition phrase
+# ("Nobody to ask is a refusal") stay out: four of the 14 matches in that prose were those.
+tokens:
+  - '\bNobody\b(?![''’]s\b| to\b)'
+  - '\b(?:but|and) nobody\b(?![''’]s\b| to\b)'

@@ -1,0 +1,183 @@
+{
+  "styles": [
+    {
+      "name": "ai-tells",
+      "repo": "tbhb/vale-ai-tells",
+      "tag": "v1.37.0",
+      "commit": "dd60c5dc0d5432f71b0113fe2003fb06d069a71f",
+      "license": "MIT",
+      "archive": {
+        "url": "https://github.com/tbhb/vale-ai-tells/releases/download/v1.37.0/ai-tells.zip",
+        "sha256": "f8d1e981abbfbac1aa092d1623a1ac9bc935f0b15e8071e7a072915abddf0570"
+      },
+      "extract": [
+        {
+          "from": "ai-tells/styles/ai-tells",
+          "to": "ai-tells"
+        },
+        {
+          "from": "ai-tells/styles/config/templates/ai-tells-agent.tmpl",
+          "to": "config/templates/ai-tells-agent.tmpl"
+        }
+      ],
+      "files": [
+        {
+          "url": "https://raw.githubusercontent.com/tbhb/vale-ai-tells/dd60c5dc0d5432f71b0113fe2003fb06d069a71f/LICENSE",
+          "sha256": "adf519814a60378fc45fedaa358c6598cde3621154945180569784c79365d4ed",
+          "to": "ai-tells/LICENSE"
+        }
+      ]
+    },
+    {
+      "name": "ai-tells-commits",
+      "repo": "tbhb/vale-ai-tells",
+      "tag": "v1.37.0",
+      "commit": "dd60c5dc0d5432f71b0113fe2003fb06d069a71f",
+      "license": "MIT",
+      "archive": {
+        "url": "https://github.com/tbhb/vale-ai-tells/releases/download/v1.37.0/ai-tells-commits.zip",
+        "sha256": "12e86278246813a3d26f5623e04843c6a8b814ad4a50eada2c781829077cbabe"
+      },
+      "extract": [
+        {
+          "from": "ai-tells-commits",
+          "to": "ai-tells-commits"
+        }
+      ],
+      "files": [
+        {
+          "url": "https://raw.githubusercontent.com/tbhb/vale-ai-tells/dd60c5dc0d5432f71b0113fe2003fb06d069a71f/LICENSE",
+          "sha256": "adf519814a60378fc45fedaa358c6598cde3621154945180569784c79365d4ed",
+          "to": "ai-tells-commits/LICENSE"
+        }
+      ]
+    },
+    {
+      "name": "STE",
+      "repo": "Syntaf/vale-llm-slop",
+      "tag": "v0.1.0",
+      "commit": "dbf02cde7a3f334469af0cf259b1feed75e06e9b",
+      "license": "MIT",
+      "archive": {
+        "url": "https://github.com/Syntaf/vale-llm-slop/releases/download/v0.1.0/STE.zip",
+        "sha256": "6ea7ce48d205038ab47edbb0b286b324e7b7362ca99768142801dbe4e02166ac"
+      },
+      "extract": [
+        {
+          "from": "STE",
+          "to": "STE"
+        }
+      ],
+      "files": [
+        {
+          "url": "https://raw.githubusercontent.com/Syntaf/vale-llm-slop/dbf02cde7a3f334469af0cf259b1feed75e06e9b/LICENSE",
+          "sha256": "902eb190e8231ea88cfbf7fb393aedbf5a97fac077c3c649a51313e0731d4743",
+          "to": "STE/LICENSE"
+        }
+      ]
+    },
+    {
+      "name": "JustSaySo",
+      "repo": "ifandelse/just-say-so",
+      "tag": "v0.18.1",
+      "commit": "433bcf903561bd92e43f9309a86e1080a901a6ee",
+      "license": "MIT",
+      "archive": {
+        "url": "https://github.com/ifandelse/just-say-so/releases/download/v0.18.1/JustSaySo.zip",
+        "sha256": "e08792111ba976fa34a3d4848f037ef9fbe57d3de1d2363a3f7b959465012484"
+      },
+      "extract": [
+        {
+          "from": "JustSaySo/styles/JustSaySo",
+          "to": "JustSaySo"
+        }
+      ],
+      "files": [
+        {
+          "url": "https://raw.githubusercontent.com/ifandelse/just-say-so/433bcf903561bd92e43f9309a86e1080a901a6ee/LICENSE",
+          "sha256": "b32b991a981786701772f0c28a05320c40c6235d7a11c3ea5ffdff89ef4e24da",
+          "to": "JustSaySo/LICENSE"
+        }
+      ]
+    },
+    {
+      "name": "Prompts",
+      "repo": "jdkato/prompts",
+      "tag": null,
+      "commit": "0fb3361da35a7b5d6934a9a3b4a6effda4fbba77",
+      "license": "MIT",
+      "files": [
+        {
+          "url": "https://raw.githubusercontent.com/jdkato/prompts/0fb3361da35a7b5d6934a9a3b4a6effda4fbba77/LICENSE",
+          "sha256": "aa431e1653f927cf92be0fcc77fe388b97780b5f0f541085e30c4abe626b1074",
+          "to": "Prompts/LICENSE"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/jdkato/prompts/0fb3361da35a7b5d6934a9a3b4a6effda4fbba77/Prompts/meta.json",
+          "sha256": "b5cb5468d8c8610aabf88ad4cfecacb4e65c4d683075c5ed67bd7dafb9bdf420",
+          "to": "Prompts/meta.json"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/jdkato/prompts/0fb3361da35a7b5d6934a9a3b4a6effda4fbba77/Prompts/Absolutes.yml",
+          "sha256": "3039f1035bdbcaa7497a7531ab22f17b34a1f984554fe73da5ef8114c89f3de4",
+          "to": "Prompts/Absolutes.yml"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/jdkato/prompts/0fb3361da35a7b5d6934a9a3b4a6effda4fbba77/Prompts/Contradiction.yml",
+          "sha256": "c919151202e6597192ba833021be556d553a680f2d4d70ff280e05f20c92e8d1",
+          "to": "Prompts/Contradiction.yml"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/jdkato/prompts/0fb3361da35a7b5d6934a9a3b4a6effda4fbba77/Prompts/Emphasis.yml",
+          "sha256": "2b639998252395595bc7010082ffe691c120dbe49297788577aba87093ada24d",
+          "to": "Prompts/Emphasis.yml"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/jdkato/prompts/0fb3361da35a7b5d6934a9a3b4a6effda4fbba77/Prompts/Frontmatter.yml",
+          "sha256": "76515fc149d7d94ffe27fc0350dcd96027b8d5b3ab5202ac31168da5325eb986",
+          "to": "Prompts/Frontmatter.yml"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/jdkato/prompts/0fb3361da35a7b5d6934a9a3b4a6effda4fbba77/Prompts/Imperative.yml",
+          "sha256": "93e98b4213ac50adb4aa9b9532cb5406ca5867604abca6fc032d66c647b415e5",
+          "to": "Prompts/Imperative.yml"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/jdkato/prompts/0fb3361da35a7b5d6934a9a3b4a6effda4fbba77/Prompts/Length.yml",
+          "sha256": "10dcb19480f9a048d46abb0b7981c89014f800820b1af440967f789d0ff86656",
+          "to": "Prompts/Length.yml"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/jdkato/prompts/0fb3361da35a7b5d6934a9a3b4a6effda4fbba77/Prompts/Paths.yml",
+          "sha256": "cf797116f0a316152b7bf3540a8259bf03cd4a1615e39127d458ebd1939ebfb3",
+          "to": "Prompts/Paths.yml"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/jdkato/prompts/0fb3361da35a7b5d6934a9a3b4a6effda4fbba77/Prompts/SectionLength.yml",
+          "sha256": "f442814292ba7cee6276c45604e2f6266629bb38bcd20c09f1104e4e3016d4d4",
+          "to": "Prompts/SectionLength.yml"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/jdkato/prompts/0fb3361da35a7b5d6934a9a3b4a6effda4fbba77/Prompts/ThirdPerson.yml",
+          "sha256": "97e2c51dd32ff616a6cee5feba3bf402758c58e1a2d372ad4a4aebc716b40bed",
+          "to": "Prompts/ThirdPerson.yml"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/jdkato/prompts/0fb3361da35a7b5d6934a9a3b4a6effda4fbba77/Prompts/TimeSensitive.yml",
+          "sha256": "c5ff33f0320ef392cb8687599d80fd7bd03c117032c06baca3c7e1a3a2818260",
+          "to": "Prompts/TimeSensitive.yml"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/jdkato/prompts/0fb3361da35a7b5d6934a9a3b4a6effda4fbba77/Prompts/Trigger.yml",
+          "sha256": "0bfcacc176b417cad1db77086d1efe8368ceb93304131e0a5b39424c465588ff",
+          "to": "Prompts/Trigger.yml"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/jdkato/prompts/0fb3361da35a7b5d6934a9a3b4a6effda4fbba77/Prompts/Vague.yml",
+          "sha256": "15faaa5f6a18637ab09ddce41bc727d1d9a960fe3b504d2fb82cd6bca707d8b3",
+          "to": "Prompts/Vague.yml"
+        }
+      ]
+    }
+  ]
+}
